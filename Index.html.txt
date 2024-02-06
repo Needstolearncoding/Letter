@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #heart-button {
+            background: none;
+            border: none;
+            color: #ff4d4d;
+            font-size: 100px;
+            cursor: pointer;
+            outline: none;
+        }
+        #letter {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #000000; /* Set the color of the text to black */
+        }
+    </style>
+</head>
+<body>
+    <button id="heart-button" onclick="showLetter()">&#10084;</button>
+    <div id="letter">
+        <p>This is a love letter.</p>
+        <p>Dear Beloved,</p>
+        <p>I love you more than words can express.</p>
+        <p>Yours forever,</p>
+        <p>Your Name</p>
+    </div>
+
+    <script>
+        function showLetter() {
+            var letterDiv = document.getElementById("letter");
+            if (letterDiv.style.display === "none") {
+                letterDiv.style.display = "block";
+            } else {
+                letterDiv.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
